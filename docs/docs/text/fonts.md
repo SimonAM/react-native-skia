@@ -7,7 +7,7 @@ slug: /text/fonts
 
 You can use your own set of custom fonts to be available in the canvas, as seen below.
 
-Note: The if clause has to be stated in the top level, above the canvas, not in child components. 
+Note: The requiring of fonts must be done top-level. Requiring fonts in sub-components will block redraws. 
 
 ```tsx twoslash
 import {Canvas, Text, useFont} from "@shopify/react-native-skia";
